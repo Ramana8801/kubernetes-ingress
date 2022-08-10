@@ -40,6 +40,16 @@ rules:
 - apiGroups:
   - ""
   resources:
+  - namespaces
+  verbs:
+  - get
+  - list
+  - watch
+  resourceNames:
+  - nginx-ingress
+- apiGroups:
+  - ""
+  resources:
   - events
   verbs:
   - create
